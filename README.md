@@ -111,6 +111,8 @@ What if you need to check the content of the exception message? JUnit 4 does off
         assertThat(caughtException()).hasMessage("Name is invalid");
     }
 
+The only downside of using the @expected pattern is that you loose control of expressing what line should throw the exception, and that you can't verify intended or un-intended side effects.
+
 
 Duplicate code (sparingly)
 --------------------------
